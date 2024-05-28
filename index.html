@@ -11,22 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,600&family=Playfair+Display:ital,wght@0,600;1,600;1,700&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
     <title>MiPagina</title>
 </head>
-<body>
-    
+<body> 
 <!--encabezado-->
-    <header class=" container my-5">
-        
-        <div class="nav g-0 row justify-content-between rounded-top ">
-                      
+    <header class=" container my-5">       
+        <div class="nav g-0 row justify-content-between rounded-top ">                     
             <div class="logo col-auto d-flex align-items-center ps-5" >
-                <h1><span>Mi</span> Portfolio.</h1>                              
-                
+                <h1><span>Mi</span> Portfolio.</h1>                                             
             </div>
-            <nav class=" menu col-auto d-flex align-item-stretch">
-                               
+            <nav class=" menu col-auto d-flex align-item-stretch">                             
                 <a href="#container" class="c2 px-4 d-flex align-items-center text-center text-white text-decoration-none">
-                    <div class="w-100">
-                        
+                    <div class="w-100">                       
                          <span>Contacto</span>
                        <div class="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
@@ -55,15 +49,11 @@
                           </svg>                  
                        </div>                                           
                     </div>                   
-                 </a>
-                 
-            </nav>
-                       
-        </div>             
-     
+                 </a>                
+            </nav>                      
+        </div>                 
     </header>  
-    <!--acordion-->
-    
+    <!--acordion-->   
     <div class="sidebar" id="sidebar">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -151,210 +141,155 @@
                     </div>
                 </div>                
             </div>
-
-        </div>
-        
+        </div>  
         <button class="btn btn-secondary" id="sidebarClose">Cerrar </button>
-    </div>
-    
+    </div>  
     <button class="btn btn-primary" id="sidebarCollapse">SKILLS </button>
-    
-    
-    <script>
-        document.getElementById('sidebarCollapse').addEventListener('click', function() {
-        document.getElementById('sidebar').classList.toggle('active');
-    });
-    
-    document.getElementById('sidebarClose').addEventListener('click', function() {
-        document.getElementById('sidebar').classList.remove('active');
-    });
-    
-    var accordionButtons = document.querySelectorAll('.accordion-button');
-    accordionButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            var collapseId = button.getAttribute('data-bs-target');
-            var collapseElement = document.querySelector(collapseId);
-            button.classList.toggle('active');
-            collapseElement.classList.toggle('show');
-        });
-    });
-    
-        setInterval(function() {
-            const animatedText = document.getElementById('animatedText');
-            animatedText.classList.remove('animate__heartBeat');
-            setTimeout(function() {
-                animatedText.classList.add('animate__heartBeat');
-            }, 10);
-        }, 6000);
-    </script>
-
-
 <hr>   
+<div class="container2" style="background-image:url(./imag/bg5.jpg) ; background-size: cover; background-position: center; min-height: 100vh; margin: 0; padding: 0; position: relative;">
+    <a name="container2"></a>
 
-   <!--portafolio--> 
-    <main>
-        <div class="container2 ">
-            <a name="container2"></a>
-
-            <div class="row sobremi align-items-center px-4 mb-5">
-                <div class="col-12 col-lg-3  foto text-center">               
-                    <img src="./imag/334644087_602963041273589_5889289089052878365_n.jpg" width="200px" class="rounded-circle" alt="">
-                    <p class="nombre">Kevin Maximiliano Cruz.</p>                
-                </div>
-                <div class="col-12 col-lg-2 info">
-                    <h2 class="titulo text-center text-lg-start">Sobre Mi.</h2>           
-                    <p>Mi nombre es Kevin Maximiliano Cruz tengo 30 años, Buenos Aires, zona Norte Tigre.</p>
-                    <p>Estudio Ciencia Politica en Universidad de Buenos Aires.</p>  
-                    <p>Estoy completando el curso Codo a Codo de Python Full Stack.</p>
-                    <p>Finalice Trayecto de Programador curso intensivo de herramientas para iniciarse en
-                        programacion.
-                    </p>                 
-                </div> <div class="col-12 col-lg-2 info">
-                    <h2 class="titulo text-center text-lg-start"> Objetivos.</h2>           
-                    <p>Introducirme en este mercardo laboral de alta demanada </p>
-                    <p>Complentar mí conocimiento sobre la sociedad y estado , finalizar mí carrera.</p>  
-                    <p>Realizar complementar ambos campos de estudio.</p> 
-                    <p>Aprender más en el ambíto IT.</p>  
-                    <p>Introducirme más en el lenguaje Python y sus distintas aplicacíones.</p>              
-                </div>  
-                <div class=" col-2 card col-lg-2 info align-items-center"> 
-                    <a href="./pdf/nuevo CV Kevin Cruz.pdf" target="_blank" rel="noopener noreferrer">
-                        <embed src="./pdf/nuevo CV Kevin Cruz.pdf" width="200" height="150" type='application/pdf'>
-                            <p>Curriculum</p>
-                        </embed>
-                    </a>
-                    
-                    
-                    
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>                      
-                        <p class="card"> Fortalezas
-                        <li>Proactividad</li>
-                        <li>Trabajo</li>
-                        <li>Esfuerzo</li>
-                        <li>Resolutivo</li>
-                        <li>Comprometido</li>
-                        <li>Constancia</li>
-                        <li>Dispuesto a Aprender</li>
-                        <li>Flexible</li>
-                    </p>
-                    </div>            
-                </div>            
-            </div>  
+    <div class="row sobremi align-items-center px-4 mb-5">
+        <div class="col-12 col-lg-3  foto text-center">               
+            <img src="./imag/334644087_602963041273589_5889289089052878365_n.jpg" width="200px" class="rounded-circle" alt="">
+            <p class="nombre">Kevin Maximiliano Cruz.</p>                
+        </div>
+        <div class="col-12 col-lg-2 info">
+            <h2 class="titulo text-center text-lg-start">Sobre Mi.</h2>           
+            <p>Mi nombre es Kevin Maximiliano Cruz tengo 30 años, Buenos Aires, zona Norte Tigre.</p>
+            <p>Estudio Ciencia Politica en Universidad de Buenos Aires.</p>
+            <p>Estoy completando el curso Codo a Codo de Python Full Stack.</p>
+            <p>Finalice Trayecto de Programador curso intensivo de herramientas para iniciarse en programacion.</p>                 
         </div> 
-        
-
+        <div class="col-12 col-lg-2 info">
+            <h2 class="titulo text-center text-lg-start"> Objetivos.</h2>           
+            <p>Introducirme en este mercardo laboral de alta demanda.</p>
+            <p>Completar mí conocimiento sobre la sociedad y estado, finalizar mí carrera.</p>  
+            <p>Realizar complementar ambos campos de estudio.</p> 
+            <p>Aprender más en el ámbito IT.</p>  
+            <p>Introducirme más en el lenguaje Python y sus distintas aplicaciones.</p>              
+        </div>  
+        <div class="col-2 card info align-items-center"> 
+            <a href="./pdf/nuevo CV Kevin Cruz.pdf" target="_blank" rel="noopener noreferrer">
+                <embed src="./pdf/nuevo CV Kevin Cruz.pdf" width="200" height="150" type='application/pdf'>
+                    <p>Curriculum</p>
+                </embed>
+            </a>
+            <div class="card-body">
+                <h5 class="card-title"></h5>                      
+                <p class="card"> Fortalezas
+                <li>Proactividad</li>
+                <li>Trabajo</li>
+                <li>Esfuerzo</li>
+                <li>Resolutivo</li>
+                <li>Comprometido</li>
+                <li>Constancia</li>
+                <li>Dispuesto a Aprender</li>
+                <li>Flexible</li>
+            </p>
+            </div>            
+        </div>            
+    </div>  
+</div> 
         <hr>
         <h1 id="animatedText" class="animate__animated animate__heartBeat text-center ">Educación.</h1>
         <a name="recursos"></a>
-        <section class="recursos justify-content-between ">           
-            <div class="col-auto d-flex justify-content-between ">               
-                <div class="col-md-6 text-center">
-                    <a href="./pdf/Kevin Cruz[1959].pdf" target="_blank" rel="noopener noreferrer">
-                        <embed src="./pdf/Kevin Cruz[1959].pdf" width="400" height="200" type='application/pdf'>
-                            <p>Intruducción al Desarrollo Web 'Fundación JAMA y Fundación Sociedades Digitales'</p>
-                    </a>                    
-                    <a href="./pdf/pdf.pdf" target="_blank" rel="noopener noreferrer">
-                        <embed src="./pdf/pdf.pdf" width="400" height="200" type='application/pdf'>
-                            <p>Trayecto de Programador 'SUBSECRETARÍA AGENCIA DE APRENDIZAJE A LO LARGO DE LA VIDA Ministerio de Educación CABA'</p>
-                    </a>                   
-                </div>
-                <div class="col-md-6 text-center">
-                    <a href="./pdf/Python_Essentials_1_Badge20240322-29-9xkz71.pdf" target="_blank" rel="noopener noreferrer">
-                        <embed src="./pdf/Python_Essentials_1_Badge20240322-29-9xkz71.pdf" width="400" height="200" type='application/pdf'>
-                            <p>Python Essentials 1 nivel inicial 'Cisco Networking Academy'</p>
-                    </a>
-                    
-                    <a href="./pdf/Python_Essentials_2_Badge20240322-29-c37ewx.pdf" target="_blank" rel="noopener noreferrer">
-                        <embed src="./pdf/Python_Essentials_2_Badge20240322-29-c37ewx.pdf" width="400" height="200" type='application/pdf'>
+        <div class="d-flex justify-content-center">
+            <section class="recursos justify-content-between ">           
+                <div class=" dentro   d-flex ">               
+                    <div class="col-md-6 text-center final">
+                        <a href="./pdf/Kevin Cruz[1959].pdf" target="_blank" rel="noopener noreferrer">
+                            <embed src="./pdf/Kevin Cruz[1959].pdf" width="300" height="100" type='application/pdf'>
+                               <div class=" text-center "> <p>Intruducción al Desarrollo Web 'Fundación JAMA y Fundación Sociedades Digitales'</p></div>
+                        </a>                    
+                        <a href="./pdf/pdf.pdf" target="_blank" rel="noopener noreferrer">
+                            <embed src="./pdf/pdf.pdf" width="300" height="100" type='application/pdf'>
+                                <p>Trayecto de Programador 'SUBSECRETARÍA AGENCIA DE APRENDIZAJE A LO LARGO DE LA VIDA Ministerio de Educación CABA'</p>
+                        </a>                    
+                    </div>
+                    <div class="col-md-6 text-center final  ">
+                        <a href="./pdf/Python_Essentials_1_Badge20240322-29-9xkz71.pdf" target="_blank" rel="noopener noreferrer">
+                            <embed src="./pdf/Python_Essentials_1_Badge20240322-29-9xkz71.pdf" width="200" height="100" type='application/pdf'>
+                                <p>Python Essentials 1 nivel inicial 'Cisco Networking Academy'
 
-                            <p>Python Essentials 2 nivel Medio 'Cisco Networking Academy'</p>
-                    </a>                            
-                </div>                                       
-            </div>  
-            <div class="contenedor2 col-lg-11 d-flex justify-content-between">
-                <div class="col-md-6 text-center">
-                    <h5>Experiencia.</h5>
-                    <p>Actualmente estoy trabajando de manera freelance part time en una pequeña compañia llamada Vao Vao como mi primmer trabajo, 
-                        tareas back-end y desarrollo de aplicacíones Web, manejo de Frameworks como Flask, Bootstrap y Apis.
-                        Manejo Bibliotecas de Python como Pandas, Seaborn, Matplotin analisis de datos.
-                        Uso de Google Colaboraty, Jupyter Notebook, Visual Studio y Pycharm. 
+                                </p>
+                        </a>
+                        <a href="./pdf/Python_Essentials_2_Badge20240322-29-c37ewx.pdf" target="_blank" rel="noopener noreferrer">
+                            <embed src="./pdf/Python_Essentials_2_Badge20240322-29-c37ewx.pdf" width="100" height="100" type='application/pdf'>
+    
+                                <p>Python Essentials 2 nivel Medio 'Cisco Networking Academy'</p>
+                        </a>                                                                                                
+                    </div> 
+                    <div class="col-md-6 text-center final ">
+                        <a href="./pdf/English_for_IT_1_Badge20240504-8-cj5p13.pdf" target="_blank" rel="noopener noreferrer">
+                            <embed src="./pdf/Python_Essentials_1_Badge20240322-29-9xkz71.pdf" width="200" height="100" type='application/pdf'>
+                                <p>English for IT 1 </p>
+                        </a>
+                           
+                    </div>
 
-                    </p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <h5> Formacion Academica Actualmente.</h5>
-                    <p>Cursando Full Stack Python impartido por Codo a Codo en la ciudad de Buenos Aires, 
-                       desarrollando y practicando ingles orientado a IT impartido por Cisco Networking Academy al mismo tiempo realizando la orientacion de relaciones internacionales
-                       de la carrera de Ciencia Politica  UBA. 
-                    </p>
-                    
-                </div>
-            </div> 
-            
-                
-            <div class="text-center ">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="140" height="130" viewBox="0,0,256,256">
-                    <g fill-opacity="0.5098" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-0.9 0.2,-1.3c0,-0.2 0.2,-0.3 0.3,-0.3h0.1c0.5,0.1 1.5,0.4 2.4,1.3c0.6,-0.2 1.3,-0.3 2,-0.3c0.7,0 1.4,0.1 2,0.3c0.9,-0.9 2,-1.2 2.5,-1.3h0.1c0.2,0 0.3,0.1 0.4,0.3c0,0.4 0,0.9 0,1.3c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
-                
-                    
-                </svg>  
-                <a href="https://github.com/Cruz200/kevincruz" target="_blank"><h5>Mi Repositorio en Github</h5></a>
+                </div>  
+                <div class="contenedor2 col-11 d-flex justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h5>Experiencia.</h5>
+                        <p>Actualmente estoy trabajando de manera freelance part time en una compañia llamada Vao Vao como mi primmer trabajo, 
+                            tareas back-end y desarrollo de aplicacíones Web, manejo de Frameworks como Flask, Bootstrap y Apis.
+                            Manejo Bibliotecas de Python como Pandas, Seaborn, Matplotin analisis de datos.
+                            Uso de Google Colaboraty, Jupyter Notebook, Git, Visual Studio y Pycharm. 
+    
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h5> Formacion Academica Actualmente.</h5>
+                        <p>Cursando Full Stack Python impartido por Codo a Codo en la ciudad de Buenos Aires, 
+                           desarrollando y practicando ingles orientado a IT impartido por Cisco Networking Academy al mismo tiempo realizando la orientacion de relaciones internacionales
+                           de la carrera de Ciencia Politica UBA (tercer año).
+                        </p>
+                        
+                    </div>
+                </div>                  
+                <div class=" git text-center col-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="140" height="130" viewBox="0,0,256,256">
+                        <g fill-opacity="0.5098" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-0.9 0.2,-1.3c0,-0.2 0.2,-0.3 0.3,-0.3h0.1c0.5,0.1 1.5,0.4 2.4,1.3c0.6,-0.2 1.3,-0.3 2,-0.3c0.7,0 1.4,0.1 2,0.3c0.9,-0.9 2,-1.2 2.5,-1.3h0.1c0.2,0 0.3,0.1 0.4,0.3c0,0.4 0,0.9 0,1.3c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>                  
+                        
+                    </svg>  
+                    <a href="https://github.com/Cruz200/kevincruz" target="_blank"><h5>Mi Repositorio en Github</h5></a>   
+                </div>                                              
+            </section>
 
-            </div>              
-                                      
-               
-                             
-        </section>           
+        </div>                   
     </main>
-    <section>
-        
-        </div>           
-    </div>
     <!--acordion-->   
     <hr>
-    <section>
+    <section >
         <div class=" ultima col-lg-12  align-items-center  ">
-            
-                
-            <h1 id="animatedText" class="animate__animated animate__tada text-center ">Contacto.</h1>           
-                                      
-                   
+            <h1 id="animatedText" class="animate__animated animate__tada text-center ">Contacto.</h1>                          
         </div>
-
     </section>
     <footer>
         <div class="container">
-            <a name="container"></a>
-           
+            <a name="container"></a>           
             <div class="row redes justify-content-center" >
                 <div class="col-auto">
                     <div class="d-inline-flex flex-column align-items-center">
                         <a href="#" class="icono linkedin d-inline-flex align-items-center justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="250" height="200" viewBox="0 0 48 48">
-                               
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="250" height="200" viewBox="0 0 48 48">                              
                                 <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
-                            </svg>
-                           
-                            <span><a href="https://www.linkedin.com/in/kevin-cruz-70834a176/" target="_blank">linkedin</a></span>
-                                                 
+                            </svg>         
+                            <span><a href="https://www.linkedin.com/in/kevin-cruz-70834a176/" target="_blank">linkedin</a></span>                                                
                         </a>
                     </div>                                      
                     <a href="#" class=" icono instagram d-inline-flex align-items-center justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                             <path fill="#e0e0e0" d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11.543c0-1.933-1.567-3.5-3.5-3.5h-37	c-1.933,0-3.5,1.567-3.5,3.5V37C2,38.933,3.567,40.5,5.5,40.5z"></path><path fill="#d9d9d9" d="M44.482,12.759L24,27.763L3.518,12.758c0,0-0.095-0.066-0.236-0.182L26,40.5h16.5 c1.933,0,3.5-1.567,3.5-3.5V11.441c0-0.102-0.021-0.197-0.03-0.296C45.816,12.262,44.482,12.759,44.482,12.759z"></path><path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z"></path><path fill="#e0e0e0" d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z"></path><path fill="#ca3737" d="M3.603,12.759c0,0-1.334-0.938-1.488-2.055c-0.008,0.099-0.03,0.195-0.03,0.296 L2,11.473v17.799V37c0,1.933,1.567,3.5,3.5,3.5H7V15.247L3.603,12.759z"></path><path fill="#ca3737" d="M45.97,11.145c-0.154,1.117-1.488,1.614-1.488,1.614L41,15.31V40.5h1.5 c1.933,0,3.5-1.567,3.5-3.5v-7.729v-17.83C46,11.34,45.979,11.244,45.97,11.145z"></path><path fill="#bcbcbc" d="M3.42,13.31l20.623,14.973L44.665,13.31c0,0,0.937-0.661,1.335-1.531v-0.228	c-0.012-1.996-1.569-3.51-3.5-3.5h-37c-1.933,0-3.5,1.567-3.5,3.5v0.009C2.323,12.536,3.42,13.31,3.42,13.31z"></path><g><path fill="#f5f5f5" d="M42.5,8H24H5.5C3.567,8,2,9.536,2,11.5c0,1.206,1.518,2.258,1.518,2.258L24,28.256 l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.536,44.433,8,42.5,8z"></path><path fill="#e84f4b" d="M43.246,8.082L24,21.5L4.754,8.082C3.18,8.419,2,9.797,2,11.5 c0,1.206,1.518,2.258,1.518,2.258L24,28.256l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.797,44.82,8.419,43.246,8.082z"></path></g>
                         </svg>
-                        <span>kevinmaximilianocruz@gmail.com</span>
-                        
-                        
-                    </a>
-                   
+                        <span>kevinmaximilianocruz@gmail.com</span>                                  
+                    </a>                
                     <a href="#" class="icono whats d-inline-flex align-items-center justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                             <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
                         </svg>
-                        <span>+541167936417</span>
-                        
+                        <span>+541167936417</span>                        
                     </a>
                 </div>
             </div>
@@ -365,7 +300,7 @@
     </footer>
 <!--footer-->
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/java.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/java.js"></script>
 </body>
 </html>
