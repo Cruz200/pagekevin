@@ -4,9 +4,7 @@
     --primario1: #b2c1d9;
     --secundario1: #6d55f2;
     --rojo: #050291a2;
-    --primario: #a202b7; 
     --secundario: #018f9e;
-    --opcion2: #0c23;
 }
 
 *, *:after, *:before {
@@ -14,24 +12,16 @@
 }
 
 body {
-    
     border-color: #9b9797dd;
     font-family: 'Lora', sans-serif;
     background-image: linear-gradient(to top, var(--negro) 10%, var(--rojo) 100%);
-    
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
+    max-width: 1200px;
     overflow-x: hidden;
-    margin: 0 auto;
-    max-width: 1200px; /* Esto evita que el contenido se extienda demasiado en pantallas muy grandes */
     display: flex;
     flex-direction: column;
-    
 }
-
-
 
 p {
     font-size: 1rem;    
@@ -50,18 +40,6 @@ p {
     border: double;
 }
 
-.btn-primary {
-    width: 110px;
-    height: 50px;
-    background-color: #525151;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    border-top: 20px;
-    border: solid #00000882 3px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-}
-
 .sidebar.active {
     left: 0;   
     background-color: #060c4742;
@@ -70,13 +48,6 @@ p {
 
 .accordion-item {
     margin-bottom: 10px;
-}
-
-.accordion-button {
-    text-align: left;
-}
-
-.accordion-item {   
     background-color: #afa3f1;
     font-size: 1rem;
     width: auto;
@@ -84,6 +55,7 @@ p {
 }
 
 .accordion-button {
+    text-align: left;
     font-family: 'Lora', sans-serif;
     font-size: 2rem;
     background-color: var(--primario1);
@@ -110,37 +82,25 @@ header .nav {
     background: #525151;
     border: solid;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-    
-}
-
-header .h1 {
-    background: #525151;  
 }
 
 .iconos {
     color: rgb(226, 226, 238);
     border: solid;   
 }
-.menu{
-    position: relative;
-    
+
+.menu {
+    position: relative; 
 }
-.nav .menu .c1 {
+
+.nav .menu .c1, .nav .menu .c2, .nav .menu .c3 {
     background: #0206ec;
 }
 
-.nav .menu .c2 {
-    background: #0206ec;
-}
-
-.nav .menu .c3 {
-    background: #0206ec;
-}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav  {
         border: 10%;
-        
     }
 }
 
@@ -150,7 +110,6 @@ header .h1 {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    
 }
 
 .container2 .foto {
@@ -165,23 +124,22 @@ header .h1 {
     display: block;
     margin: 0 auto;   
 }
+
 .sobremi {
     color: white;
     padding: 50px 0;   
 }
 
 .foto {
-    text-align: center;
-    
+    text-align: center;  
 }
 
-
-@media (max-with : 768px) {
-    .foto{
+@media (max-width: 768px) {
+    .foto {
         flex: content;
     }
-
 }
+
 .info {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -231,26 +189,28 @@ header .h1 {
     width: auto;
     margin: 20px;
 }
+
 .infoo {
     background-color: #6d55f2;
     font-size: 3rem;
     position: relative;
 }
+
 .contenedor2 {
     background-color: #eeeaa7;
     border: double;
     margin: auto;
     padding: 2%;
 }
-.text-center{
+
+.text-center {
     padding: 2%;
 }
+
 .recursos {
     border-radius: 130px;
     background-color: var(--primario1);
     padding-top: 50px;
-    /*padding-left: 30px;
-    min-width: 400px;*/
     margin: 2rem;
     border: solid #060868a3 3px;
     overflow: hidden;
@@ -278,8 +238,6 @@ header .h1 {
 
 .cubo {
     background-color: beige;
-    top: 155px;
-    right: 150rem;
     align-items: center;
     max-width: 3968px;
     max-height: 100px;
@@ -288,15 +246,16 @@ header .h1 {
     justify-content: center;
     overflow: hidden;
     display: flex;
-    padding: 1rem; 
-    max-width :200px; ;
+    padding: 1rem;
+    max-width: 200px;
 }
+
 .dentro {    
     display: flex;
     padding: 5%;
-    
 }
-.final{
+
+.final {
     flex-wrap: wrap;
     flex: auto;
     padding: 2%;
@@ -325,19 +284,14 @@ header .h1 {
         margin: 0.5rem 0;
     }
 }
+
 @media (max-width: 468px) {
     .dentro {
-        /* Aquí puedes agregar los estilos que necesites para la clase .dentro en pantallas pequeñas */
         padding: 10px;
         font-size: 14px;
         text-align: center;
-        /* Otros estilos que necesites */
     }
 }
-
-
-
-
 
 .texto {
     background-color: var(--primario1);
@@ -346,18 +300,18 @@ header .h1 {
 .redes {
     padding: 40px;
     margin-top: 40px;
-    display: flex;  /* Usar flexbox para mantener los iconos alineados en fila */
-    justify-content: center;  /* Centrar los iconos horizontalmente */
-    flex-wrap: wrap;  /* Permitir que los iconos se ajusten a la línea siguiente si es necesario */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .redes .icono {
     height: 100px;
     width: 100px;
     color: #edf0f4;
-    display: inline-flex;  /* inline-flex para que sigan estando en línea */
-    align-items: center;  /* Centrar el contenido dentro del icono */
-    justify-content: center;  /* Centrar el contenido dentro del icono */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 20px;
     text-decoration: none;
     border-radius: 100px;
@@ -368,10 +322,6 @@ header .h1 {
 .redes .icono svg {
     height: 40px;
     width: 40px;
-}
-
-.icono .redes {
-    border: 10%;
 }
 
 .redes .linkedin {
@@ -400,173 +350,26 @@ header .h1 {
     justify-content: space-between;
 }
 
-/* Estilos responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
     .redes .icono {
-        height: 80px;  /* Ajusta el tamaño del icono en pantallas pequeñas */
+        height: 80px;
         width: 80px;
     }
     
     .redes .icono svg {
-        height: 30px;  /* Ajusta el tamaño del icono SVG en pantallas pequeñas */
+        height: 30px;
         width: 30px;
     }
 
     .redes {
-        justify-content: space-around;  /* Espacio alrededor de los iconos */
+        justify-content: space-around;
     }
 }
 
 @media (max-width: 768px) {
     .redes span {
-        font-size: 0.5rem; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
-        white-space: normal; /* Permite que las palabras se dividan en líneas si es necesario */
-    }
-}
-@media screen and (max-width: 576px) {}
-
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 1200px) {}
-
-body {
-    border-color: #9b9797dd;
-    font-family: 'Lora', sans-serif;
-    background-image: linear-gradient(to top, var(--negro) 10%, var(--rojo) 100%);
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100%;
-    width: 250px;
-    z-index: 1000;
-    background-color: #f8f9fa;
-    transition: all 0.3s ease;
-    overflow-y: auto;
-    border: double;
-}
-
-.sidebar.active {
-    left: 0;   
-    background-color: #060c4742;
-    min-height: 3rem;
-}
-
-/* Botones */
-.btn-primary {
-    width: 110px;
-    height: 50px;
-    background-color: #525151;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: solid #00000882 3px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-}
-
-/* Título */
-h1 {
-    color: beige;
-    background: #525151;
-    font-size: 50px;
-}
-
-/* Header */
-header .nav {
-    min-height: 80px;
-    background: #525151;
-    border: solid;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
-}
-
-/* Clases de imagen */
-.container2 .foto {
-    overflow: hidden;
-    z-index: 1;
-    padding: 10px;
-    border-radius: 30%;
-    margin-top: 100px;
-}
-
-.container2 .foto img {
-    display: block;
-    margin: 0 auto;
-}
-
-.info {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.sobremi .info {
-    font-size: 12px;
-    color: #525151;
-    background-color: #d2d2d9;
-    padding: 2rem;
-    border-radius: 1rem;  
-    max-width: 150px;
-    margin: 0 auto;
-}
-
-.card {
-    background-color: rgba(11, 6, 6, 0.7);
-    color: #edf0f4;
-    font-family: 'Lora', sans-serif;
-    font-size: 12px;
-    margin-top: 20px;
-    margin: 20px;
-}
-
-/* Responsive Styles */
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 768px) {
-    .nav {
-        border: 10%;
-    }
-
-    .container2 .foto {
-        margin-top: 50px;
-        padding: 5px;
-    }
-
-    .dentro > div {
-        flex: 1 1 100%;
-        margin: 0.5rem 0;
-    }
-}
-
-/* Ajuste para pantallas muy pequeñas */
-@media (max-width: 468px) {
-    .dentro {
-        padding: 10px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .cubo {
-        max-width: 100%;
-        padding: 1rem;
-    }
-}
-
-/* Ajuste para pantallas medianas */
-@media (max-width: 1200px) {
-    .sobremi .info {
-        max-width: 90%;
-        padding: 1rem;
-    }
-
-    .info h2 {
-        max-width: 100%;
+        font-size: 0.5rem;
+        white-space: normal;
     }
 }
