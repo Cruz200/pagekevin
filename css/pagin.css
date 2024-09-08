@@ -22,11 +22,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 p {
     font-size: 1rem;    
 }
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -39,13 +37,11 @@ p {
     overflow-y: auto;
     border: double;
 }
-
 .sidebar.active {
     left: 0;   
     background-color: #060c4742;
     min-height: 3rem;
 }
-
 .accordion-item {
     margin-bottom: 10px;
     background-color: #afa3f1;
@@ -53,7 +49,6 @@ p {
     width: auto;
     height: auto;    
 }
-
 .accordion-button {
     text-align: left;
     font-family: 'Lora', sans-serif;
@@ -63,7 +58,6 @@ p {
     width: 180px;
     border: double;
 }
-
 .progress-bar {
     padding: 3px;
     width: 150px;
@@ -103,7 +97,21 @@ header .nav {
         border: 10%;
     }
 }
-
+.container-contacto, .container-sobremi, .container-educacion {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+.container-contacto {
+    max-width: 600px;
+}
+.container-sobremi {
+    max-width: 800px;
+}
+.container-educacion {
+    max-width: 800px;
+}
 .container2 {
     background-size: cover;
     background-position: center;
@@ -111,7 +119,6 @@ header .nav {
     margin: 0;
     padding: 0;
 }
-
 .container2 .foto {
     overflow: hidden;
     z-index: 1;
@@ -119,33 +126,36 @@ header .nav {
     border-radius: 30%;
     margin-top: 100px;
 }
-
 .container2 .foto img {
     display: block;
     margin: 0 auto;   
 }
-
+.container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.container img.full-width {
+    width: 100%;
+    height: auto;
+}
 .sobremi {
     color: white;
     padding: 50px 0;   
 }
-
 .foto {
     text-align: center;  
 }
-
 @media (max-width: 768px) {
     .foto {
         flex: content;
     }
 }
-
 .info {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     margin-top: 20px;
 }
-
 .info h2 {
     color: var(--primario1);
     max-width: 20%;
@@ -155,18 +165,15 @@ header .nav {
     width: 100%;
     height: auto;
 }
-
 .titulo {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.887);
 }
-
 .nombre {
     font-family: 'Lora', sans-serif;
     color: var(--primario1);
     font-size: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.887);
 }
-
 .sobremi .info {
     font-weight: 100%;
     font-size: 12px;
@@ -179,7 +186,6 @@ header .nav {
     border-radius: 1rem;  
     max-width: 150px;
 }
-
 .card {
     background-color: rgba(11, 6, 6, 0.7);
     color: #edf0f4;
@@ -189,24 +195,20 @@ header .nav {
     width: auto;
     margin: 20px;
 }
-
 .infoo {
     background-color: #6d55f2;
     font-size: 3rem;
     position: relative;
 }
-
 .contenedor2 {
     background-color: #eeeaa7;
     border: double;
     margin: auto;
     padding: 2%;
 }
-
 .text-center {
     padding: 2%;
 }
-
 .recursos {
     border-radius: 130px;
     background-color: var(--primario1);
@@ -217,25 +219,21 @@ header .nav {
     display: flex;
     flex-wrap: wrap;
 }
-
 .recursos p {
     font-size: 12px;
     justify-content: center;
     align-items: center;
 }
-
 .recursos embed {
     width: 70%;
     height: auto;
     max-width: 100%;
     margin-bottom: 20px;
 }
-
 .recursos .col-md-6 {
     flex: 1;
     max-width: 100%;
 }
-
 .cubo {
     background-color: beige;
     align-items: center;
@@ -249,42 +247,44 @@ header .nav {
     padding: 1rem;
     max-width: 200px;
 }
-
 .dentro {    
     display: flex;
     padding: 5%;
 }
-
 .final {
-    flex-wrap: wrap;
-    flex: auto;
-    padding: 2%;
-    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }
-
+.final:hover {
+    transform: scale(1.05);
+}
 .git {
     padding-bottom: 2%;
     flex-wrap: wrap;
     align-items: center;
 }
-
 .dentro > div {
     flex: 0 0 calc(50% - 1rem);
     margin: 0.5rem;
 }
-
 .dentro p {
     flex-flow: column;
     font-size: 60%;
 }
-
+.dentro {
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    }
 @media (max-width: 768px) {
     .dentro > div {
         flex: 1 1 100%;
         margin: 0.5rem 0;
     }
 }
-
 @media (max-width: 468px) {
     .dentro {
         padding: 10px;
@@ -292,11 +292,9 @@ header .nav {
         text-align: center;
     }
 }
-
 .texto {
     background-color: var(--primario1);
 }
-
 .redes {
     padding: 40px;
     margin-top: 40px;
@@ -304,7 +302,6 @@ header .nav {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .redes .icono {
     height: 100px;
     width: 100px;
@@ -318,28 +315,22 @@ header .nav {
     background-color: #03649d;  
     transition: all 0.3s ease;
 }
-
 .redes .icono svg {
     height: 40px;
     width: 40px;
 }
-
 .redes .linkedin {
     background: rgb(29, 127, 218);       
 }
-
 .redes .instagram {
     background: rgb(228, 10, 240);
 }
-
 .redes .whats {
     background: rgb(5, 232, 20);
 }
-
 .icono {
     position: relative;
 }
-
 .icono span, .icono a {
     position: absolute;
     bottom: -20px;
@@ -349,27 +340,49 @@ header .nav {
     color: #fff;
     justify-content: space-between;
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .redes .icono {
         height: 80px;
         width: 80px;
     }
-    
     .redes .icono svg {
         height: 30px;
         width: 30px;
     }
-
     .redes {
         justify-content: space-around;
     }
 }
-
 @media (max-width: 768px) {
     .redes span {
         font-size: 0.5rem;
         white-space: normal;
     }
+}
+.carousel-item {
+    height: 400px;
+}
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+embed {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+}
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }
